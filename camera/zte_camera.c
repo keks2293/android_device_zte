@@ -22,7 +22,8 @@
 #include <hardware/power.h>
 #include <hardware/hardware.h>
 
-//various funcs we'll need to call, in their mangled form
+
+    //various funcs we'll need to call, in their mangled form
 
     //android::String16::String16(char const*)
     extern void _ZN7android8String16C1EPKc(void **str16P, const char *str);
@@ -33,14 +34,10 @@
     //android::SensorManager::SensorManager(android::String16 const&)
     extern void _ZN7android13SensorManagerC1ERKNS_8String16E(void *sensorMgr, void **str16P);
 
-    extern int _ZN7android5Fence4waitEi(int);
-
 //code exports we provide
 
     //android::SensorManager::SensorManager(void)
     void _ZN7android13SensorManagerC1Ev(void *sensorMgr);
-
-    int _ZN7android5Fence4waitEj(unsigned int timeout);
 
 /*
  * FUNCTION: android::SensorManager::SensorManager(void)
@@ -60,6 +57,6 @@ void _ZN7android13SensorManagerC1Ev(void *sensorMgr)
     _ZN7android8String16D1Ev(&string);
 }
 
-int _ZN7android5Fence4waitEj(unsigned int timeout) {
-    return _ZN7android5Fence4waitEi(timeout);
-}
+    /* for nubia camera stock app */
+extern void _ZN8SkBitmap9setConfigENS_6ConfigEiij11SkAlphaType() {}
+extern void _ZN8SkBitmap9setConfigENS_6ConfigEiim11SkAlphaType() {}
