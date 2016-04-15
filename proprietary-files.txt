@@ -16,7 +16,9 @@ bin/gpsone_daemon
 bin/hci_qcomm_init
 bin/imsqmidaemon
 bin/irsc_util
+bin/loc_launcher
 bin/location-mq
+bin/lowi-server
 bin/mm-qcamera-app
 bin/mm-qcamera-daemon
 bin/msm_irqbalance
@@ -35,6 +37,8 @@ bin/rmt_storage
 bin/thermal-engine
 bin/time_daemon
 bin/usb_uicc_client
+bin/xtwifi-client
+bin/xtwifi-inet-agent
 etc/capability.xml
 etc/cne/SwimConfig.xml
 etc/cne/andsfCne.xml
