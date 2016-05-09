@@ -251,5 +251,8 @@ MR_DEVICE_HOOKS := $(DEVICE_PATH)/multirom/mr_hooks.c
 MR_DEVICE_HOOKS_VER := 5
 TARGET_RECOVERY_IS_MULTIROM := true
 
+# disable block-based ota
+BLOCK_BASED_OTA :=false
+
 # inherit from the proprietary version
 -include vendor/zte/nx512j/BoardConfigVendor.mk
