@@ -26,6 +26,6 @@ $(call inherit-product, device/zte/nx512j/device.mk)
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := nx512j
 PRODUCT_NAME := full_nx512j
-PRODUCT_BRAND := ZTE
-PRODUCT_MODEL := Z9MAX
-PRODUCT_MANUFACTURER := ZTE
+PRODUCT_BRAND := nubia
+PRODUCT_MODEL := NX512J
+PRODUCT_MANUFACTURER := nubia
