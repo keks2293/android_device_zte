@@ -29,9 +29,9 @@ if [ -e "/sys/bus/i2c/devices/5-005d/touch_mode" ]; then
 	ln -s /sys/bus/i2c/devices/5-005d/touch_mode /data/tp/touch_mode
 fi
 
-if [ -e "/sys/bus/i2c/devices/2-004a/keypad_enable" ]; then
-	chown system:system /sys/bus/i2c/devices/2-004a/keypad_enable
-    ln -s /sys/bus/i2c/devices/2-004a/keypad_enable /data/tp/keypad_enable
+if [ -e "/sys/bus/i2c/devices/5-005d/keypad_enable" ]; then
+	chown system:system /sys/bus/i2c/devices/5-005d/keypad_enable
+    ln -s /sys/bus/i2c/devices/5-005d/keypad_enable /data/tp/keypad_enable
 fi
 
 # ==============================================================================
