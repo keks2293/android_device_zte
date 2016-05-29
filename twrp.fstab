@@ -1,8 +1,8 @@
 
 /system		ext4	/dev/block/bootdevice/by-name/system         flags=display="System"
 
-/data		ext4	/dev/block/bootdevice/by-name/userdata
-/cache		ext4	/dev/block/bootdevice/by-name/cache          flags=display="Cache";backup=1
+/data		auto	/dev/block/bootdevice/by-name/userdata
+/cache		auto	/dev/block/bootdevice/by-name/cache          flags=display="Cache";backup=1
 /persist 	ext4 	/dev/block/bootdevice/by-name/persist		flags=display="Persist";backup=1
 /boot		emmc 	/dev/block/bootdevice/by-name/boot		flags=display="Boot";backup=1
 /firmware 	vfat 	/dev/block/bootdevice/by-name/modem		flags=display="Modem";backup=1
