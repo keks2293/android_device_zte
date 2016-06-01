@@ -219,6 +219,10 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     memtrack.msm8916
 
+# Gello
+PRODUCT_PACKAGES += \
+    Gello
+
 # Filesystem
 PRODUCT_PACKAGES += \
     e2fsck \
