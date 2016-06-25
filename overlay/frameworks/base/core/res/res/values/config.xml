@@ -208,7 +208,20 @@
         <item>135</item>   <!-- 8300-10000 -->
         <item>255</item>   <!-- 10000+ -->
     </integer-array>
+    
+        <!-- Array of output values for button backlight corresponding to the LUX values
+         in the config_autoBrightnessLevels array.  This array should have size one greater
+         than the size of the config_autoBrightnessLevels array.
+         This must be overridden in platform specific overlays -->
+    <integer-array name="config_autoBrightnessButtonBacklightValues">
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+        <item>0</item>
+    </integer-array>
 
+    <!-- Button illumination -->
     <bool name="config_deviceHasVariableButtonBrightness">true</bool>
 
     <!-- Is the notification LED intrusive? Used to decide if there should be a disable option -->
