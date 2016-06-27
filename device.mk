@@ -191,6 +191,10 @@ PRODUCT_PACKAGES += \
     camera.msm8916 \
     libmm-qcamera \
     Snap
+    
+# Snap
+PRODUCT_PROPERTY_OVERRIDES += \
+persist.camera.cpp.duplication=false
 
 # Charger
 PRODUCT_PACKAGES += \
