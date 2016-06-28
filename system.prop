@@ -75,7 +75,7 @@ mm.disable.sec_smoothstreaming=true
 media.aac_51_output_enabled=true
 drm.service.enabled=1
 audio.offload.disable=1
-#audio.deep_buffer.media=true
+audio.deep_buffer.media=true
 
 # perf
 ro.min_freq_0=960000
