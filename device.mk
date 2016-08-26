@@ -197,11 +197,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false \
     persist.camera.hal.debug.mask=0
 
-# CMHW JNI
-PRODUCT_PACKAGES += \
-    libjni_cmhw \
-    updater \
-
 # Connectivity Engine support
 PRODUCT_PACKAGES += \
     libcnefeatureconfig
