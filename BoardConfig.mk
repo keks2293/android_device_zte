@@ -51,6 +51,13 @@ TARGET_USES_64_BIT_BINDER := true
 TARGET_BOARD_PLATFORM := msm8916
 TARGET_BOARD_PLATFORM_GPU := qcom-adreno405
 
+# CM Hardware
+BOARD_USES_CYANOGEN_HARDWARE := true
+BOARD_HARDWARE_CLASS += \
+    hardware/cyanogen/cmhw \
+    $(DEVICE_PATH)/cmhw
+TARGET_TAP_TO_WAKE_NODE := "/data/tp/easy_wakeup_gesture"
+ 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8916
 TARGET_NO_BOOTLOADER := true
