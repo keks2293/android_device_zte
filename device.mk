@@ -197,10 +197,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false \
     persist.camera.hal.debug.mask=0
 
-# Charger
-PRODUCT_PACKAGES += \
-    charger_res_images
-
 # CMHW JNI
 PRODUCT_PACKAGES += \
     libjni_cmhw \
