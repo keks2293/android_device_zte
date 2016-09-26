@@ -152,8 +152,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/configs/hostapd_default.conf:system/etc/hostapd/hostapd_default.conf \
     $(DEVICE_PATH)/configs/hostapd.deny:system/etc/hostapd/hostapd.deny \
     $(DEVICE_PATH)/configs/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    $(DEVICE_PATH)/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-    $(DEVICE_PATH)/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+    $(DEVICE_PATH)/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
 ifeq ($(BOARD_USES_QCNE),true)
 PRODUCT_PACKAGES += \
@@ -345,6 +344,7 @@ PRODUCT_PACKAGES += \
     hostapd \
     dhcpcd.conf \
     wpa_supplicant \
+    wpa_supplicant.conf \
     wcnss_service
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
