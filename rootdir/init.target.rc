@@ -191,3 +191,7 @@ service tp_node /system/bin/sh /tp_node.sh
     user root
     group root
     oneshot
+
+    # Adaptive LMK
+    write /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk 1
+    write /sys/module/lowmemorykiller/parameters/vmpressure_file_min 81250
