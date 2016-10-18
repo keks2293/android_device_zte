@@ -99,7 +99,7 @@ framework/qcnvitems.jar
 framework/qcrilhook.jar
 lib/egl/egl.cfg
 lib/egl/libGLES_android.so
-lib/hw/camera.msm8916.so
+lib/hw/camera.msm8916.so:lib/hw/camera.vendor.msm8916.so
 lib/hw/gps.msm8916.so
 lib/hw/sensors.msm8916.so
 lib/libgps.utils.so
