@@ -28,7 +28,6 @@ DEVICE_PROVISIONED=1
 ro.telephony.default_network=9,9
 persist.radio.multisim.config=dsds
 persist.data.qmi.adb_logmask=0
-ro.ril.multi_rat_capable=true
 
 # Audio
 ro.qc.sdk.audio.fluencetype=fluence
