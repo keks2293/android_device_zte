@@ -52,6 +52,11 @@ ro.sf.lcd_density=480
 ro.qualcomm.bt.hci_transport=smd
 bluetooth.hfp.client=1
 
+# Camera
+camera2.portability.force_api=1
+media.stagefright.legacyencoder=true
+media.stagefright.less-secure=true
+
 # Display
 sys.hwc.gpu_perf_mode=1
 debug.composition.type=c2d
