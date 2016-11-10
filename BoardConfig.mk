@@ -272,5 +272,8 @@ TARGET_RECOVERY_IS_MULTIROM := true
 # disable block-based ota
 BLOCK_BASED_OTA :=false
 
+# Ninja
+USE_NINJA := false
+
 # inherit from the proprietary version
 -include vendor/zte/nx512j/BoardConfigVendor.mk
