@@ -31,6 +31,11 @@ import init.target.rc
 on early-init
     insmod /sbin/qcrypto_module.ko
     insmod /sbin/qdrbg_module.ko
+    #Allow subsystems to be restarted instead of crashing the system
+    # 0=venus, 1=pronto, 2=mms == modem
+    write /sys/bus/msm_subsys/devices/subsys0/restart_level related
+    write /sys/bus/msm_subsys/devices/subsys1/restart_level related
+    write /sys/bus/msm_subsys/devices/subsys2/restart_level related
 
 on init
     export LD_SHIM_LIBS "/system/lib/libcrypto.so|libboringssl-compat.so:/system/vendor/lib/libmmcamera2_sensor_modules.so|libzte_camera.so:/system/lib/libbuffer_manager.so|libzte_camera.so:/system/vendor/lib/libmmcamera2_stats_modules.so|libzte_camera.so:/system/lib64/libcrypto.so|libboringssl-compat.so:/system/vendor/lib64/egl/libEGL_adreno.so|libboringssl-compat.so:/system/vendor/lib64/libcne.so|libril_shim.so"
