@@ -5,9 +5,9 @@ include $(CLEAR_VARS)
 LOCAL_SHARED_LIBRARIES := liblog libcutils libgui libbinder libutils
 
 LOCAL_SRC_FILES := \
-    zte_camera.c
+    camera_shim.c
 
-LOCAL_MODULE := libzte_camera
+LOCAL_MODULE := libshim_camera
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 
 LOCAL_32_BIT_ONLY := $(BOARD_QTI_CAMERA_32BIT_ONLY)

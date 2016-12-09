@@ -318,7 +318,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libstlport \
     libboringssl-compat \
-    libzte_camera
+    libshim_camera
 
 # USB
 PRODUCT_PACKAGES += \
