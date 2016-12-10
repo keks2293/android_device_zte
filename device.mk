@@ -344,9 +344,6 @@ PRODUCT_PACKAGES += \
     wpa_supplicant.conf \
     wcnss_service
 
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-    persist.sys.usb.config=mtp
-
 # Camera
 PRODUCT_PROPERTY_OVERRIDES += \
     camera2.portability.force_api=1
