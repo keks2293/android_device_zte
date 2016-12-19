@@ -38,7 +38,7 @@ on early-init
     write /sys/bus/msm_subsys/devices/subsys2/restart_level related
 
 on init
-    export LD_SHIM_LIBS "/system/lib/libcrypto.so|libboringssl-compat.so:/system/vendor/lib/libmmcamera2_sensor_modules.so|libshim_camera.so:/system/lib/libbuffer_manager.so|libshim_camera.so:/system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so:/system/lib64/libcrypto.so|libboringssl-compat.so:/system/vendor/lib64/egl/libEGL_adreno.so|libboringssl-compat.so:/system/vendor/lib64/libcne.so|libril_shim.so"
+    export LD_SHIM_LIBS "/system/lib/libcrypto.so|libboringssl-compat.so:/system/vendor/lib/libmmcamera2_sensor_modules.so|libshim_camera.so:/system/lib/libbuffer_manager.so|libshim_camera.so:/system/vendor/lib/libmmcamera2_stats_modules.so|libshim_camera.so:/system/lib64/libcrypto.so|libboringssl-compat.so:/system/vendor/lib64/egl/libEGL_adreno.so|libboringssl-compat.so"
 
     setprop persist.powermo.disfeature " "
 
