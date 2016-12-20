@@ -186,10 +186,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.cpp.duplication=false \
     persist.camera.hal.debug.mask=0
 
-# Connectivity Engine support
-PRODUCT_PACKAGES += \
-    libcnefeatureconfig
-
 # CRDA
 PRODUCT_PACKAGES += \
     crda \
@@ -214,13 +210,6 @@ PRODUCT_PACKAGES += \
     e2fsck \
     make_ext4fs \
     setup_fs
-
-# DataServices
-PRODUCT_PACKAGES += \
-    librmnetctl \
-    rmnetcli \
-    sockev \
-    datatop
 
 # FM
 PRODUCT_PACKAGES += \
@@ -305,6 +294,8 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_PACKAGES += \
+    libcnefeatureconfig \
+    librmnetctl \
     libxml2
 
 # Misc. libs
