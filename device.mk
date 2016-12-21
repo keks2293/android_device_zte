@@ -61,7 +61,7 @@ PRODUCT_COPY_FILES += \
     $(DEVICE_PATH)/audio/acdb/MTP_Speaker_cal.acdb:system/etc/acdbdata/MTP/MTP_Speaker_cal.acdb \
     $(DEVICE_PATH)/audio/audio_platform_info.xml:system/etc/audio_platform_info.xml \
     $(DEVICE_PATH)/audio/audio_policy.conf:system/etc/audio_policy.conf \
-    $(DEVICE_PATH)/audio/mixer_paths.xml:system/etc/mixer_paths.xml \
+    $(DEVICE_PATH)/audio/mixer_paths_mtp.xml:system/etc/mixer_paths_mtp.xml \
     $(DEVICE_PATH)/audio/audio_effects.conf:system/vendor/etc/audio_effects.conf \
     $(DEVICE_PATH)/audio/aanc_tuning_mixer.txt:system/etc/aanc_tuning_mixer.txt \
     $(DEVICE_PATH)/audio/sound_trigger_mixer_paths.xml:system/etc/sound_trigger_mixer_paths.xml	
