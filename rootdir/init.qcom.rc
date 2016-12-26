@@ -1151,9 +1151,3 @@ on property:persist.sys.image.colortmp=c
 mkdir /data/data/com.android.camera/cache/so/
 chmod 0667 -R /data/data/com.android.camera/cache/so/
 #ZTEMT end
-# SSWAP
-service swapon /sbin/sswap -s
-    class core
-    user root
-    group root
-    oneshot
