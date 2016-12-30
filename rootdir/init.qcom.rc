@@ -29,6 +29,7 @@ import init.nubia.usb.rc
 import init.target.rc
 
 on early-init
+    mount debugfs debugfs /sys/kernel/debug
     insmod /sbin/qcrypto_module.ko
     insmod /sbin/qdrbg_module.ko
     #Allow subsystems to be restarted instead of crashing the system
