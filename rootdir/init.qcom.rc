@@ -1106,13 +1106,6 @@ service akmd09911 /system/bin/akmd09911
     seclabel u:r:sensor:s0
     oneshot
 
-#This is for the ThemeManager.
-service FontsWilluse /system/bin/sh /system/etc/fonts_check.sh
-    class main
-    user root
-    group root
-    oneshot
-
 service wirelesstest /system/bin/wirelesstest
     class main
     socket wirelesstest stream 600 system system
