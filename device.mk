@@ -316,11 +316,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     com.android.future.usb.accessory
 
-# WiFi Display
-ifneq ($(QCPATH),)
-PRODUCT_BOOT_JARS += WfdCommon
-endif
-
 # Wifi
 PRODUCT_PACKAGES += \
     libwcnss_qmi
