@@ -178,10 +178,6 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessing \
     tinymix
 
-# Ambient Display
-PRODUCT_PACKAGES += \
-    DeviceSettings
-
 # Camera
 PRODUCT_PACKAGES += \
     camera.msm8916 \
