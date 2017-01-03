@@ -292,6 +292,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(DEVICE_PATH)/rootdir,root)
 
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*,$(DEVICE_PATH)/etc,system/etc)
+
 # RIL
 PRODUCT_PACKAGES += \
     libcnefeatureconfig \
