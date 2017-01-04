@@ -17,8 +17,6 @@ DEVICE_PATH := device/zte/nx512j
 
 TARGET_SPECIFIC_HEADER_PATH := $(DEVICE_PATH)/include
 
-PRODUCT_COPY_FILES := $(filter-out frameworks/base/data/keyboards/Generic.kl:system/usr/keylayout/Generic.kl , $(PRODUCT_COPY_FILES))
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE := nx512J,NX512J,Nx512J,NX512j
 
